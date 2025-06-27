@@ -21,44 +21,48 @@ Bu proje, güncel hava durumu verilerine göre kullanıcıya uygun kıyafet öne
 
 ## ⚙️ Kurulum
 
-1. Bu projeyi klonlayın:
-   ```bash
-   git clone https://github.com/SezinKorogluu/gpt-weather-stylist.git
-   cd gpt-weather-stylist
-Gerekli kütüphaneleri yükleyin:
+# 1. Bu projeyi klonlayın
+git clone https://github.com/SezinKorogluu/gpt-weather-stylist.git
+cd gpt-weather-stylist
 
-2.Gerekli kütüphaneleri yükleyin: 
+# 2. Gerekli kütüphaneleri yükleyin
 pip install -r requirements.txt
 
-3.env dosyasını oluşturun ve API anahtarlarınızı girin:
-	OPENAI_API_KEY=your_openai_api_key
-	WEATHERAPI_KEY=your_weatherapi_key
+# 3. .env dosyasını oluşturun ve içine API anahtarlarınızı girin
+echo OPENAI_API_KEY=your_openai_api_key >> .env
+echo WEATHERAPI_KEY=your_weatherapi_key >> .env
 
-4. Uygulamayı başlatın:
-	streamlit run app.py
+# 4. Uygulamayı başlatın
+streamlit run app.py
 
-🧪 Örnek Kullanım->
+##🧪 Örnek Kullanım
 Kullanıcıdan gelen soru:
-	Ankara'da bugün ne giysem?
+Ankara'da bugün ne giysem?
+
 Yanıt:
-	Ankara’da hava güneşli ve 24°C. Bugün hafif bir kazak veya uzun kollu tişört tercih edebilirsiniz. Üzerinize ince bir ceket almak faydalı olabilir. Spor ayakkabı ve güneş gözlüğü de iyi bir seçim olur.
+Ankara’da hava güneşli ve 24°C. Bugün hafif bir kazak veya uzun kollu tişört tercih edebilirsiniz. Üzerinize ince bir ceket almak faydalı olabilir. Spor ayakkabı ve güneş gözlüğü de iyi bir seçim olur.
 
- 🛠️ Kullanılan Araçlar (Tools)
-get_weather: Belirtilen konum için güncel hava durumu bilgisini çeker.
+##🛠️ Kullanılan Araçlar (Tools)
+get_weather
+Belirtilen konum için güncel hava durumu bilgisini çeker.
 
-recommend_clothing: Hava durumu bilgisine göre uygun kıyafet önerileri sunar
+recommend_clothing
+Hava durumu bilgisine göre uygun kıyafet önerileri sunar:
 
 Sıcaklık aralığına göre öneriler
+
 Hava koşullarına göre özel öneriler (yağmurlu, karlı, rüzgarlı, güneşli)
+
 Mevsimsel uygunluk
 
-📌 Notlar
-.env dosyası .gitignore içine eklenmiştir ve GitHub’a yüklenmez.
+##📌 Notlar
+.env dosyası .gitignore içerisine eklenmiştir ve GitHub’a yüklenmez.
 
 Bu proje sadece eğitim ve demo amaçlıdır.
 
-🧑‍💻 Geliştirici
+##🧑‍💻 Geliştirici
 Sezin Köroğlu
 📍 Türkiye
 
 ⭐ Geliştirme önerileri ve katkılar için PR’lar (pull request) açıktır.
+
