@@ -43,17 +43,17 @@ Yanıt:
 Ankara’da hava güneşli ve 24°C. Bugün hafif bir kazak veya uzun kollu tişört tercih edebilirsiniz. Üzerinize ince bir ceket almak faydalı olabilir. Spor ayakkabı ve güneş gözlüğü de iyi bir seçim olur.
 
 # 🛠️ Kullanılan Araçlar (Tools)
-get_weather
+get_weather:
 Belirtilen konum için güncel hava durumu bilgisini çeker.
 
-recommend_clothing
+recommend_clothing:
 Hava durumu bilgisine göre uygun kıyafet önerileri sunar:
 
-Sıcaklık aralığına göre öneriler
+ Sıcaklık aralığına göre öneriler
 
-Hava koşullarına göre özel öneriler (yağmurlu, karlı, rüzgarlı, güneşli)
+ Hava koşullarına göre özel öneriler (yağmurlu, karlı, rüzgarlı, güneşli)
 
-Mevsimsel uygunluk
+ Mevsimsel uygunluk
 
 # 📌 Notlar
 .env dosyası .gitignore içerisine eklenmiştir ve GitHub’a yüklenmez.
